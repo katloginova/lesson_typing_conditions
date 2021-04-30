@@ -3,21 +3,12 @@ const numberFirst = +prompt('Enter the first number');
 const numberSecond = +prompt('Enter the second number');
 
 
-const expression = `${numberFirst} ${sign} ${numberSecond}`;
-
-const operaitions = {
-    addition: numberFirst + numberSecond,
-    subtraction: numberFirst - numberSecond,
-    multiplication: numberFirst * numberSecond,
-    division: numberFirst / numberSecond
-};
-
 if (sign === '+') {
-    alert(expression + ' = ' + operaitions.addition);
+    alert(`${numberFirst} ${sign} ${numberSecond} = ${numberFirst + numberSecond}`);
 } else if (sign === '-') {
-    alert(expression + ' = ' + operaitions.subtraction);
+    alert(`${numberFirst} ${sign} ${numberSecond} = ${numberFirst - numberSecond}`);
 } else if (sign === '*') {
-    alert(expression + ' = ' + operaitions.multiplication);
+    alert(`${numberFirst} ${sign} ${numberSecond} = ${numberFirst * numberSecond}`);
 } else if (sign === '/') {
-    alert(expression + ' = ' + operaitions.division.toFixed(2));
+    alert(`${numberFirst} ${sign} ${numberSecond} = ${(numberFirst / numberSecond).toFixed(2)}`);
 }
